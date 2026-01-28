@@ -1,0 +1,131 @@
+Keywords,Answer,Language
+"hello,hi,hey,",Hello! How can I help you?,en
+namaste,नमस्ते! मैं आपकी मदद के लिए यहाँ हूँ 😊,hi
+hi,Hello! How can I help you?,en
+hey,Hello! How can I help you?,hi
+"bye,goodbye,tata",Bye! Have a nice day 😊,en
+bye,अलविदा! आपका दिन शुभ हो 😊,hi
+courses,"Available courses are AI, ML, Python",en
+courses,"कोर्स AI, ML, Python उपलब्ध हैं",hi
+"experience letter,experience","Yes, an experience letter is provided",en
+"experience letter,experience","हाँ, यहाँ experience letter दिया जाता है",hi
+"internship,internship hai,milti hai,karate hai","Yes, internships are available",en
+"internship,internship hai,milti hai,karate hai","हाँ, यहाँ internships उपलब्ध हैं",hi
+"fee,fees,fee kya hai,kitni hai",Course fee details are shared during admission,en
+"fee,fees,fee kya hai,kitni hai",कोर्स फीस का विवरण प्रवेश के समय दिया जाता है,hi
+admission,Admissions are open for all courses,en
+admission,सभी कोर्स के लिए प्रवेश खुला है,hi
+placement,We provide placement assistance,en
+placement,हम प्लेसमेंट सहायता प्रदान करते हैं,hi
+"contact,contact number,number",You can contact us via email or phone,en
+"contact,contact number,number",आप हमसे ईमेल या फोन से संपर्क कर सकते हैं,hi
+schedule,The course schedule is shared on website,en
+schedule,कोर्स का समय-सारिणी वेबसाइट पर दिया गया है,hi
+support,We provide 24/7 student support,en
+support,हम 24/7 छात्र सहायता प्रदान करते हैं,hi
+library,Our library has many resources,en
+library,हमारी लाइब्रेरी में कई संसाधन उपलब्ध हैं,hi
+project,Students can do projects as part of learning,en
+project,छात्र सीखने के हिस्से के रूप में प्रोजेक्ट कर सकते हैं,hi
+exam,Exam dates are available on the website,en
+exam,परीक्षा की तारीखें वेबसाइट पर उपलब्ध हैं,hi
+"hello,hi,hey,greetings,namaste",Hello! How can I help you?,en
+"namaste,hello,hi,hey,greetings",नमस्ते! मैं आपकी मदद के लिए यहाँ हूँ 😊,hi
+"bye,goodbye,see you,later,farewell",Bye! Have a nice day 😊,en
+"bye,goodbye,alvida,phir milte hai",अलविदा! आपका दिन शुभ हो 😊,hi
+"courses,course,training,program,class,classes","Available courses are AI, ML, Python",en
+"courses,course,training,program,class,classes","कोर्स AI, ML, Python उपलब्ध हैं",hi
+"experience letter,letter,experience,certificate,proof","Yes, an experience letter is provided",en
+"experience letter,letter,experience,certificate,proof","हाँ, यहाँ experience letter दिया जाता है",hi
+"internship,intern,work experience,training program,practical","Yes, internships are available",en
+"internship,intern,work experience,training program,practical","हाँ, यहाँ internships उपलब्ध हैं",hi
+"fee,course fee,charges,cost,payment",Course fee details are shared during admission,en
+"fee,course fee,charges,cost,payment",कोर्स फीस का विवरण प्रवेश के समय दिया जाता है,hi
+"admission,enrollment,apply,registration,entry,admission open",Admissions are open for all courses,en
+"admission,enrollment,apply,registration,entry,admission open",सभी कोर्स के लिए प्रवेश खुला है,hi
+"placement,job assistance,career help,employment",We provide placement assistance,en
+"placement,job assistance,career help,employment",हम प्लेसमेंट सहायता प्रदान करते हैं,hi
+"contact,email,phone,reach,call",You can contact us via email or phone,en
+"contact,email,phone,reach,call",आप हमसे ईमेल या फोन से संपर्क कर सकते हैं,hi
+"schedule,timing,time table,timetable",The course schedule is shared on website,en
+"schedule,timing,time table,timetable",कोर्स का समय-सारिणी वेबसाइट पर दिया गया है,hi
+"support,help,assistance,query,question",We provide 24/7 student support,en
+"support,help,assistance,query,question",हम 24/7 छात्र सहायता प्रदान करते हैं,hi
+"library,resources,books,reading material",Our library has many resources,en
+"library,resources,books,reading material",हमारी लाइब्रेरी में कई संसाधन उपलब्ध हैं,hi
+"project,assignment,task,practical,work",Students can do projects as part of learning,en
+"project,assignment,task,practical,work",छात्र सीखने के हिस्से के रूप में प्रोजेक्ट कर सकते हैं,hi
+"exam,test,assessment,quiz",Exam dates are available on the website,en
+"exam,test,assessment,quiz",परीक्षा की तारीखें वेबसाइट पर उपलब्ध हैं,hi
+"faculty,teacher,instructor,professor",Our faculty are highly experienced,en
+"faculty,teacher,instructor,professor",हमारे शिक्षक बहुत अनुभवी हैं,hi
+"syllabus,course content,curriculum,topics",The syllabus is available on the website,en
+"syllabus,course content,curriculum,topics",पाठ्यक्रम वेबसाइट पर उपलब्ध है,hi
+"hostel,accommodation,residence,dorm",Hostel facilities are available for students,en
+"hostel,accommodation,residence,dorm",छात्रो के लिए हॉस्टल सुविधाएं उपलब्ध हैं,hi
+"transport,bus,van,travel,commute",Transport facilities are provided,en
+"transport,bus,van,travel,commute",परिवहन सुविधाएं उपलब्ध हैं,hi
+"events,seminar,workshop,conference",We organize events and workshops regularly,en
+"events,seminar,workshop,conference",हम नियमित रूप से इवेंट और वर्कशॉप आयोजित करते हैं,hi
+"lab,laboratory,computer lab,practical lab",Labs are equipped with modern facilities,en
+"lab,laboratory,computer lab,practical lab",लैब आधुनिक सुविधाओं से सुसज्जित हैं,hi
+"certificate,award,achievement,document",Certificates are provided after course completion,en
+"certificate,award,achievement,document",कोर्स पूरा करने के बाद सर्टिफिकेट प्रदान किया जाता है,hi
+"registration,enroll,sign up,apply",Registration is open online,en
+"registration,enroll,sign up,apply",ऑनलाइन पंजीकरण खुला है,hi
+"workshop,training session,practical,class",Workshops are conducted regularly,en
+"workshop,training session,practical,class",वर्कशॉप नियमित रूप से आयोजित की जाती हैं,hi
+"seminar,guest lecture,session,meeting",Seminars by experts are organized,en
+"seminar,guest lecture,session,meeting",विशेषज्ञों द्वारा सेमिनार आयोजित किए जाते हैं,hi
+"advisory,mentor,guide,counseling",Students can seek advisory from mentors,en
+"advisory,mentor,guide,counseling",छात्र मार्गदर्शन के लिए सलाह ले सकते हैं,hi
+"alumni,ex-students,old students,graduate",Our alumni network is very strong,en
+"alumni,ex-students,old students,graduate",हमारे पूर्व छात्र नेटवर्क बहुत मजबूत हैं,hi
+"scholarships,financial aid,grants,scholarship program",Scholarships are available for eligible students,en
+"scholarships,financial aid,grants,scholarship program",योग्य छात्रों के लिए छात्रवृत्ति उपलब्ध हैं,hi
+"online classes,virtual classes,live classes,distance learning",Online classes are conducted regularly,en
+"online classes,virtual classes,live classes,distance learning",ऑनलाइन कक्षाएं नियमित रूप से आयोजित की जाती हैं,hi
+"feedback,suggestion,review,comments",Students can provide feedback anytime,en
+"feedback,suggestion,review,comments",छात्र कभी भी प्रतिक्रिया दे सकते हैं,hi
+"awards,prizes,recognition,achievement",Awards are given for outstanding performance,en
+"awards,prizes,recognition,achievement",उत्कृष्ट प्रदर्शन के लिए पुरस्कार दिए जाते हैं,hi
+"lab equipment,tools,apparatus,instruments",Labs have modern equipment and tools,en
+"lab equipment,tools,apparatus,instruments",लैब में आधुनिक उपकरण और साधन उपलब्ध हैं,hi
+"competitions,contest,events,challenge",We organize competitions regularly,en
+"competitions,contest,events,challenge",हम नियमित रूप से प्रतियोगिताएं आयोजित करते हैं,hi
+"training,skill development,practical training,internship",Training sessions are provided for skill development,en
+"training,skill development,practical training,internship",कौशल विकास के लिए प्रशिक्षण सत्र प्रदान किए जाते हैं,hi
+"career guidance,job advice,mentorship,career counseling",Career guidance is available for all students,en
+"career guidance,job advice,mentorship,career counseling",सभी छात्रों के लिए करियर मार्गदर्शन उपलब्ध है,hi
+"research,study,project work,experiment",Students can take part in research projects,en
+"research,study,project work,experiment",छात्र अनुसंधान प्रोजेक्ट में भाग ले सकते हैं,hi
+"library resources,books,journals,ebooks",Our library provides extensive resources,en
+"library resources,books,journals,ebooks",हमारी लाइब्रेरी में व्यापक संसाधन उपलब्ध हैं,hi
+"events,seminars,guest lectures,programs",Special events and seminars are organized,en
+"events,seminars,guest lectures,programs",विशेष इवेंट और सेमिनार आयोजित किए जाते हैं,hi
+"campus,facilities,amenities,environment",Campus provides all essential facilities,en
+"campus,facilities,amenities,environment",परिसर सभी आवश्यक सुविधाएं प्रदान करता है,hi
+"student council,student body,representatives,committee",Student council helps in decision making,en
+"student council,student body,representatives,committee",छात्र परिषद निर्णय लेने में मदद करती है,hi
+"internship duration, duration of internship, internship period, how long internship, length of internship",इंटर्नशिप की अवधि 3 महीने या 6 महीने है,hi
+"internship duration, duration of internship, internship period, how long internship, length of internship",Internship duration is 3 months or 6 months,en
+"unpaid internship, is it unpaid, unpaid, no stipend internship, free internship",यह बिना वेतन की इंटर्नशिप है,hi
+"unpaid internship, is it unpaid, unpaid, no stipend internship, free internship",These are unpaid internships,en
+"stipend, stipend provided, do we get stipend, stipend amount, salary,money provide,salary provide",इसमें स्टाइपेंड प्रदान किया जाता है,hi
+"stipend, stipend provided, do we get stipend, stipend amount, salary,money provide,salary provide",Stipend is provided,en
+"monthly stipend, how much stipend, monthly salary, stipend per month, pay per month,kitni money milti hai,kitni salary milti hai,money,salary,kitna stipend milti hai,stipend",यहाँ मासिक 10000 स्टाइपेंड दिया जाता है,hi
+"monthly stipend, how much stipend, monthly salary, stipend per month, pay per month,kitni money milti hai,kitni salary milti hai,money,salary,kitna stipend milti hai,stipend",Monthly stipend of 10000 is provided,en
+"minimum age, age limit, age requirement, minimum years, eligibility age",न्यूनतम 16 वर्ष आयु आवश्यक है,hi
+"minimum age, age limit, age requirement, minimum years, eligibility age",Minimum 16 years age required,en
+"apply process, how to apply, application process, submission, register",छात्र ऑनलाइन आवेदन कर सकते हैं,hi
+"apply process, how to apply, application process, submission, register",Students can apply online,en
+"number of interns, how many interns, total interns, interns per batch",प्रत्येक बैच में 10 इंटर्न चुने जाते हैं,hi
+"number of interns, how many interns, total interns, interns per batch",10 interns selected per batch,en
+"location, internship location, where is it, place, office location",इंटर्नशिप का स्थान: मोहाली,hi
+"location, internship location, where is it, place, office location",Internship location: Mohali,en
+"duration extension, can duration extend, extend internship, prolong, extend period",प्रदर्शन के आधार पर अवधि बढ़ाई जा सकती है,hi
+"duration extension, can duration extend, extend internship, prolong, extend period",Duration may extend based on performance,en
+"selection criteria, selection process, how are interns selected, interview, resume",चयन रिज़्यूमे और साक्षात्कार के आधार पर होता है,hi
+"selection criteria, selection process, how are interns selected, interview, resume",Selection based on resume & interview,en
+"online,offline,mode,class",क्लासेस ऑनलाइन और ऑफलाइन दोनों मोड में उपलब्ध हैं।,hi
+"online,offline,mode,class",Classes are available in online or offline mode.,en
