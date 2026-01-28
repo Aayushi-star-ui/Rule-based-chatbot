@@ -5,7 +5,8 @@ import re
 # ===============================
 # CONFIG
 # ===============================
-CSV_PATH = r"C:\Users\hp\OneDrive\Desktop\Final_bot\data.csv"
+CSV_PATH = "data.csv"
+df=pd.read_csv(CSV_PATH)
 
 # ===============================
 # STOPWORDS
@@ -93,3 +94,4 @@ if user_input:
                 "माफ़ कीजिए, इस सवाल का जवाब उपलब्ध नहीं है।"
 
             )
+
