@@ -5,8 +5,7 @@ import re
 # ===============================
 # CONFIG
 # ===============================
-CSV_PATH = "data.csv"
-df=pd.read_csv(CSV_PATH)
+df = pd.read_csv("data.csv")
 
 # ===============================
 # STOPWORDS
@@ -94,4 +93,5 @@ if user_input:
                 "माफ़ कीजिए, इस सवाल का जवाब उपलब्ध नहीं है।"
 
             )
+
 
