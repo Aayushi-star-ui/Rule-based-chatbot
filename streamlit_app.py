@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
 import re
+import os
 
 # ===============================
 # CONFIG
 # ===============================
+
+st.write("Files in directory:",os.listdir())
 df = pd.read_csv("data.csv")
 
 # ===============================
@@ -93,5 +96,6 @@ if user_input:
                 "माफ़ कीजिए, इस सवाल का जवाब उपलब्ध नहीं है।"
 
             )
+
 
 
