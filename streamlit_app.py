@@ -1,46 +1,75 @@
 import streamlit as st
 import pandas as pd
 import re
-import os
+import time
 
 # ===============================
-# CONFIG
+# PAGE CONFIG
 # ===============================
-
-st.write("Files in directory:",os.listdir())
-df = pd.read_csv("data.csv")
-
-# ===============================
-# STOPWORDS
-# ===============================
-
-EN_STOPWORDS = [
-    "is","are","am","was","were","the","a","an","in","on","at","of","to",
-    "for","what","why","how","where","when","who","which","do","does",
-    "did","can","could","should","would","please"
-]
-
-HI_STOPWORDS = [
-    "kya","kyu","kyun","kyon","kab","kaha","kahan","kaise","kaisa",
-    "kaun","kon","kis","kisko","kisliye","liye","hai","ho","hoga",
-    "hogi","tha","thi","the","me","mein","par","se","ko","ki","ka",
-    "ke","aur","ya","to","hi","bhi","plz","please"
-]
+st.set_page_config(
+    page_title="AI Chatbot",
+    page_icon="🤖",
+    layout="centered"
+)
 
 # ===============================
-# FUNCTIONS
+# SESSION STATE (Chat History)
 # ===============================
-
-def tokenize(text):
-    return re.findall(r"\b\w+\b", text.lower())
-
-def remove_stopwords(words, lang):
-    stopwords = EN_STOPWORDS if lang == "en" else HI_STOPWORDS
-    return [w for w in words if w not in stopwords]
+if "chat" not in st.session_state:
+    st.session_state.chat = []
 
 # ===============================
-# LOAD DATA
+# CUSTOM CSS (LIGHT & EYE-FRIENDLY)
 # ===============================
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #a18cd1, #84fab0, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease-in-out infinite;
+    color: #111827;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.chat {
+    max-height: 420px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.user {
+    background: #f9a8d4;
+    color: #111827;
+    padding: 14px 18px;
+    border-radius: 18px;
+    margin: 10px 0;
+    text-align: right;
+    font-weight: 500;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.bot {
+    background: #7dd3fc;
+    color: #111827;
+    padding: 14px 18px;
+    border-radius: 18px;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+</style>
+""", unsafe_allow_html=True)
+
+# ===============================
+# DATA LOAD
+# ===============================
+CSV_PATH = r"C:\Users\hp\OneDrive\Desktop\Final_bot\data.csv"
 
 df = pd.read_csv(CSV_PATH)
 df["Keywords"] = df["Keywords"].fillna("").str.lower()
@@ -48,54 +77,81 @@ df["Answer"] = df["Answer"].fillna("")
 df["Language"] = df["Language"].fillna("").str.lower()
 
 # ===============================
-# STREAMLIT UI
+# FUNCTIONS
 # ===============================
+def tokenize(text):
+    return re.findall(r"\b\w+\b", text.lower())
 
-st.title("🤖 Rule Based Chatbot")
+# ===============================
+# UI
+# ===============================
+st.markdown(
+    "<h1 style='text-align:center;'>🤖 Rule-Based Chatbot</h1>",
+    unsafe_allow_html=True
+)
 
-ui_lang = st.radio("Select language / भाषा चुनें", ["English", "Hindi"])
-lang = "en" if ui_lang == "English" else "hi"
+# Language selection
+lang_ui = st.radio("🌍 Select Language / भाषा चुनें", ["English", "Hindi"])
+lang = "en" if lang_ui == "English" else "hi"
 
-user_input = st.text_input("Type your question")
+# Suggested questions
+st.write("💡 Suggested Questions:")
+cols = st.columns(3)
+suggestions = ["Admission process", "Fee structure", "Courses offered"]
 
+for i, q in enumerate(suggestions):
+    if cols[i].button(q):
+        st.session_state.user_input = q
+
+# User input
+user_input = st.text_input("💬 Ask me something...", key="user_input")
+
+# ===============================
+# CHAT LOGIC
+# ===============================
 if user_input:
-    text = user_input.lower()
+    st.session_state.chat.append(("user", user_input))
 
-    # Simple replies
-    if text in ["hi","hello","hey","namaste","namaskar","hy"]:
-        st.write("Hello 👋" if lang=="en" else "नमस्ते 🙏")
+    with st.spinner("🤖 Bot is thinking..."):
+        time.sleep(1)
 
-    elif text in ["ok","okay","haan","ha","theek","thik"]:
-        st.write("Okay 👍" if lang=="en" else "ठीक है 👍")
+    words = tokenize(user_input)
+    response = ""
 
-    elif "thank" in text or "dhanyavaad" in text:
-        st.write("You're welcome 🙂" if lang=="en" else "धन्यवाद 🙏")
+    for _, row in df.iterrows():
+        keywords = [k.strip() for k in row["Keywords"].split(",")]
+        if any(w in keywords for w in words) and row["Language"] == lang:
+            response = row["Answer"]
+            break
 
+    if response == "":
+        response = (
+            "Sorry, I don’t have an answer for that 😔"
+            if lang == "en"
+            else "माफ़ कीजिए, इस सवाल का जवाब उपलब्ध नहीं है 😔"
+        )
+
+    response += " 😊"
+    st.session_state.chat.append(("bot", response))
+
+# ===============================
+# DISPLAY CHAT
+# ===============================
+st.markdown("<div class='chat'>", unsafe_allow_html=True)
+
+for sender, msg in st.session_state.chat:
+    if sender == "user":
+        st.markdown(f"<div class='user'>{msg}</div>", unsafe_allow_html=True)
     else:
-        # NLP PROCESS
-        words = tokenize(text)
-        meaningful_words = remove_stopwords(words, lang)
+        st.markdown(f"<div class='bot'>{msg}</div>", unsafe_allow_html=True)
 
-        found = False
+st.markdown("</div>", unsafe_allow_html=True)
 
-        for _, row in df.iterrows():
-            keywords = [k.strip() for k in row["Keywords"].split(",")]
-
-            # 🔥 MAIN LOGIC: ANY MATCH
-            if any(w in keywords for w in meaningful_words):
-                if row["Language"] == lang:
-                    st.write(row["Answer"])
-                    found = True
-                    break
-
-        if not found:
-            st.write(
-                "Sorry, I don’t have an answer for that."
-                if lang=="en"
-                else
-                "माफ़ कीजिए, इस सवाल का जवाब उपलब्ध नहीं है।"
-
-            )
-
-
-
+# ===============================
+# FOOTER
+# ===============================
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown(
+    "<div style='text-align:center; opacity:0.8;'>✨ Designed by Chatbot Innovators | G.M.N. College Ambala Cantt</div>",
+    unsafe_allow_html=True
+)
